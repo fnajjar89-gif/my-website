@@ -1,24 +1,61 @@
-        p {
-            font-size: 20px;
-            margin-bottom: 40px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenai Travel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+    .service h3 {
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Kenai Travel</h1>
-    <p>Explore the world with us — luxury tours, unforgettable adventures, and tailored travel experiences.</p>
-    <a href="contact.html" class="btn">Contact Us</a>
+  <h1>Welcome to Kenai Travel</h1>
+  <p>We provide essential travel services to make your journey smooth and enjoyable.</p>
+
+  <div class="services">
+    <div class="service">
+      <h3>Ticketing</h3>
+      <p>Book flights and transportation easily.</p>
+    </div>
+    <div class="service">
+      <h3>Visa</h3>
+      <p>Assistance with visa applications and processing.</p>
+    </div>
+    <div class="service">
+      <h3>Tourism</h3>
+      <p>Guided tours and travel packages tailored for you.</p>
+    </div>
+  </div>
 </body>
 </html>
