@@ -1,241 +1,93 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-}
-
-body{
-background:#f5f7fa;
-}
-
-.hero{
-
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-
-}
-
-.hero h1{
-
-font-size:65px;
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:22px;
-margin-bottom:35px;
-
-}
-
-.btn{
-
-padding:15px 40px;
-border:none;
-border-radius:40px;
-text-decoration:none;
-margin:10px;
-font-size:18px;
-transition:.4s;
-
-}
-
-.primary{
-background:#00b4d8;
-color:white;
-}
-
-.primary:hover{
-background:#0096c7;
-}
-
-.secondary{
-
-border:2px solid white;
-color:white;
-
-}
-
-.secondary:hover{
-
-background:white;
-color:black;
-
-}
-
-.services{
-
-padding:90px 8%;
-background:white;
-
-}
-
-.title{
-
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-color:#023047;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-padding:35px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-transition:.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.icon{
-
-font-size:50px;
-margin-bottom:20px;
-
-}
-
-.card h3{
-
-margin-bottom:15px;
-color:#0077b6;
-
-}
-
-.card p{
-
-color:#666;
-line-height:1.8;
-
-}
-
-footer{
-
-background:#023047;
-color:white;
-padding:30px;
-text-align:center;
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<section class="hero">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Jordan Travel</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#stories">Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Jordan With Us</h1>
+      <p>Unforgettable tours, desert adventures, and cultural experiences.</p>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </section>
 
-<h1>اكتشف العالم معنا</h1>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
 
-<p>
-رحلات سياحية • حجوزات طيران • فنادق • تأشيرات • برامج سياحية
-</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Petra Tours</h3>
+        <p>Explore the ancient city of Petra with expert guides.</p>
+      </div>
 
-<a href="#" class="btn primary">احجز الآن</a>
+      <div class="card">
+        <h3>Wadi Rum Safari</h3>
+        <p>Desert jeep tours, camping, and Bedouin experience.</p>
+      </div>
 
-<a href="#" class="btn secondary">استكشف الرحلات</a>
+      <div class="card">
+        <h3>Dead Sea Trips</h3>
+        <p>Relax and float in the lowest point on earth.</p>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- STORIES / TESTIMONIALS -->
+  <section id="stories" class="section dark">
+    <h2>Customer Stories</h2>
 
-</section>
+    <div class="grid">
+      <div class="card">
+        <p>"Amazing experience in Petra! Everything was perfect."</p>
+        <h4>- Sarah</h4>
+      </div>
 
+      <div class="card">
+        <p>"Best desert trip ever. Highly recommended!"</p>
+        <h4>- John</h4>
+      </div>
 
-<section class="services">
+      <div class="card">
+        <p>"Professional team and great service."</p>
+        <h4>- Lina</h4>
+      </div>
+    </div>
+  </section>
 
-<h2 class="title">
-خدماتنا السياحية
-</h2>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
 
-<div class="cards">
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
 
-<div class="card">
-<div class="icon">✈️</div>
-<h3>حجز الطيران</h3>
-<p>أفضل الأسعار على جميع شركات الطيران.</p>
-</div>
-
-<div class="card">
-<div class="icon">🏨</div>
-<h3>حجز الفنادق</h3>
-<p>فنادق فاخرة ومنتجعات حول العالم.</p>
-</div>
-
-<div class="card">
-<div class="icon">🌍</div>
-<h3>الرحلات السياحية</h3>
-<p>برامج سياحية داخلية وخارجية.</p>
-</div>
-
-<div class="card">
-<div class="icon">🛂</div>
-<h3>التأشيرات</h3>
-<p>خدمات استخراج التأشيرات بسرعة.</p>
-</div>
-
-<div class="card">
-<div class="icon">🚗</div>
-<h3>تأجير السيارات</h3>
-<p>سيارات حديثة مع أفضل الأسعار.</p>
-</div>
-
-<div class="card">
-<div class="icon">🎒</div>
-<h3>الرحلات الجماعية</h3>
-<p>عروض مميزة للمجموعات والعائلات.</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 جميع الحقوق محفوظة | Kenai Travel
-
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Jordan Travel Agency. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
