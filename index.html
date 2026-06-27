@@ -1,126 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* ===== HEADER ===== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background: #111;
-  color: white;
-}
+  <h1>Jordan Travel Agency</h1>
 
-header nav {
-  display: flex;
-  gap: 20px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* ===== HERO ===== */
-.hero {
-  min-height: 90vh;
-  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-
-.hero-text {
-  background: rgba(0,0,0,0.5);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 600px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #ff9800;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-/* ===== SECTIONS ===== */
-.section {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.dark {
-  background: #f5f5f5;
-}
-
-/* ===== GRID (IMPORTANT FIX) ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto 0;
-}
-
-/* ===== CARD ===== */
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* ===== FORM ===== */
-form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-form input, form textarea {
-  padding: 10px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-/* ===== RESPONSIVE (ONLY MOBILE) ===== */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  header nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text {
-    width: 90%;
-  }
-}
+</body>
+</html>
