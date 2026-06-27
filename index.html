@@ -1,81 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Kenai Travel</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    .logo {
-      width: 220px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      background: rgba(255,255,255,0.8);
-      padding: 10px;
-    }
-    h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-      background: rgba(255,255,255,0.8);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 40px;
-      background: rgba(255,255,255,0.7);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
-    .service {
-      background: rgba(255,255,255,0.85);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      width: 220px;
-    }
-    .service h3 {
-      margin-bottom: 10px;
-      color: #3498db;
-    }
-    .service p {
-      font-size: 16px;
-      color: #555;
-    }
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+
+}
+
+.hero h1{
+
+font-size:65px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+
+}
+
+.btn{
+
+padding:15px 40px;
+border:none;
+border-radius:40px;
+text-decoration:none;
+margin:10px;
+font-size:18px;
+transition:.4s;
+
+}
+
+.primary{
+background:#00b4d8;
+color:white;
+}
+
+.primary:hover{
+background:#0096c7;
+}
+
+.secondary{
+
+border:2px solid white;
+color:white;
+
+}
+
+.secondary:hover{
+
+background:white;
+color:black;
+
+}
+
+.services{
+
+padding:90px 8%;
+background:white;
+
+}
+
+.title{
+
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#023047;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.icon{
+
+font-size:50px;
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#0077b6;
+
+}
+
+.card p{
+
+color:#666;
+line-height:1.8;
+
+}
+
+footer{
+
+background:#023047;
+color:white;
+padding:30px;
+text-align:center;
+
+}
+
+</style>
+
 </head>
+
 <body>
-  <!-- شعار الشركة -->
-  <img src="KENAI_Logo_Print_Ready(1)_page-0001.jpg" alt="Kenai Travel Logo" class="logo">
 
-  <h1>Kenai Travel Services</h1>
-  <p>We provide essential travel solutions to make your journey smooth and enjoyable.</p>
+<section class="hero">
 
-  <div class="services">
-    <div class="service">
-      <h3>Ticketing</h3>
-      <p>Book flights and transportation easily.</p>
-    </div>
-    <div class="service">
-      <h3>Visa</h3>
-      <p>Assistance with visa applications and processing.</p>
-    </div>
-    <div class="service">
-      <h3>Tourism
+<div>
+
+<h1>اكتشف العالم معنا</h1>
+
+<p>
+رحلات سياحية • حجوزات طيران • فنادق • تأشيرات • برامج سياحية
+</p>
+
+<a href="#" class="btn primary">احجز الآن</a>
+
+<a href="#" class="btn secondary">استكشف الرحلات</a>
+
+</div>
+
+</section>
+
+
+<section class="services">
+
+<h2 class="title">
+خدماتنا السياحية
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">✈️</div>
+<h3>حجز الطيران</h3>
+<p>أفضل الأسعار على جميع شركات الطيران.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏨</div>
+<h3>حجز الفنادق</h3>
+<p>فنادق فاخرة ومنتجعات حول العالم.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌍</div>
+<h3>الرحلات السياحية</h3>
+<p>برامج سياحية داخلية وخارجية.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛂</div>
+<h3>التأشيرات</h3>
+<p>خدمات استخراج التأشيرات بسرعة.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h3>تأجير السيارات</h3>
+<p>سيارات حديثة مع أفضل الأسعار.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎒</div>
+<h3>الرحلات الجماعية</h3>
+<p>عروض مميزة للمجموعات والعائلات.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 جميع الحقوق محفوظة | Kenai Travel
+
+</footer>
+
+</body>
+</html>
