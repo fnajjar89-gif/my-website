@@ -1,121 +1,165 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
 
-<title>KENAI Travel</title>
+body{
+background:#061b2e;
+color:white;
+overflow-x:hidden;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
+/* BACKGROUND */
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#061b2e,#0b3a66);
+z-index:-3;
+}
 
-<body>
+.glow{
+position:fixed;
+width:600px;
+height:600px;
+background:#f4b43a33;
+filter:blur(180px);
+top:-200px;
+left:-200px;
+z-index:-2;
+}
 
-<!-- الخلفية -->
-<div class="bg-glow"></div>
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
 
-<!-- Navbar -->
-<header>
-<nav>
-<div class="logo">KENAI</div>
+.logo{
+font-size:28px;
+font-weight:900;
+color:#f4b43a;
+}
 
-<ul>
-<li><a href="#">الرئيسية</a></li>
-<li><a href="#">الخدمات</a></li>
-<li><a href="#">من نحن</a></li>
-<li><a href="#">تواصل</a></li>
-</ul>
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
 
-<button>احجز الآن</button>
-</nav>
+nav ul li{
+cursor:pointer;
+opacity:.8;
+transition:.3s;
+}
 
-<!-- Hero -->
-<section class="hero">
+nav ul li:hover{
+opacity:1;
+color:#00c2ff;
+}
 
-<img src="images/KENAI_Logo_Print_Ready(1)_page-0001.jpg" class="hero-logo">
+button{
+background:#f4b43a;
+border:none;
+padding:10px 22px;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+}
 
-<h1>استكشف العالم بثقة</h1>
+/* HERO */
+.hero{
+text-align:center;
+padding:80px 20px;
+}
 
-<p>رحلات سياحية • طيران • فنادق • تأشيرات</p>
+.logo-img{
+width:240px;
+margin-bottom:20px;
+filter:drop-shadow(0 20px 40px rgba(0,0,0,.5));
+animation:float 4s ease-in-out infinite;
+}
 
-<div class="buttons">
-<a href="#" class="btn">احجز الآن</a>
-<a href="#" class="btn outline">خدماتنا</a>
-</div>
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+}
 
-</section>
-</header>
+.hero h1{
+font-size:46px;
+margin-bottom:10px;
+}
 
-<!-- Services -->
-<section class="services">
+.hero p{
+opacity:.8;
+margin-bottom:25px;
+}
 
-<h2>خدماتنا</h2>
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+}
 
-<div class="grid">
+.buttons a{
+text-decoration:none;
+padding:12px 25px;
+border-radius:30px;
+background:#00c2ff;
+color:white;
+transition:.3s;
+}
 
-<div class="card">
-<div class="icon">✈</div>
-<h3>حجز طيران</h3>
-<p>أفضل الأسعار لجميع شركات الطيران</p>
-</div>
+.buttons a:hover{
+transform:translateY(-3px);
+}
 
-<div class="card">
-<div class="icon">🏨</div>
-<h3>فنادق</h3>
-<p>فنادق فاخرة حول العالم</p>
-</div>
+.outline{
+background:transparent !important;
+border:2px solid white;
+}
 
-<div class="card">
-<div class="icon">🛂</div>
-<h3>تأشيرات</h3>
-<p>تسهيل إجراءات السفر</p>
-</div>
+/* SERVICES */
+.services{
+padding:80px 8%;
+text-align:center;
+background:rgba(255,255,255,0.02);
+backdrop-filter:blur(10px);
+}
 
-<div class="card">
-<div class="icon">🚗</div>
-<h3>تأجير سيارات</h3>
-<p>سيارات حديثة بأسعار مناسبة</p>
-</div>
+.services h2{
+font-size:38px;
+margin-bottom:40px;
+}
 
-<div class="card">
-<div class="icon">🧳</div>
-<h3>برامج سياحية</h3>
-<p>رحلات منظمة وممتعة</p>
-</div>
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
 
-<div class="card">
-<div class="icon">☎</div>
-<h3>دعم 24/7</h3>
-<p>نخدمك طوال الوقت</p>
-</div>
+.card{
+background:rgba(255,255,255,0.06);
+padding:25px;
+border-radius:20px;
+transition:.3s;
+cursor:pointer;
+}
 
-</div>
+.card:hover{
+transform:translateY(-10px);
+background:rgba(244,180,58,0.15);
+}
 
-</section>
-
-<!-- Why Us -->
-<section class="why">
-
-<h2>لماذا KENAI؟</h2>
-
-<div class="why-box">
-
-✔ أسعار منافسة<br>
-✔ حجوزات مضمونة<br>
-✔ خدمة سريعة<br>
-✔ دعم دائم
-
-</div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-<p>KENAI Travel</p>
-<p>Explore • Experience • Enrich</p>
-<p>© 2026 جميع الحقوق محفوظة</p>
-</footer>
-
-</body>
-</html>
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:#04121f;
+margin-top:40px;
+opacity:.8;
+}
